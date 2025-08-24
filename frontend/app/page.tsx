@@ -11,6 +11,7 @@ import { Question } from "@/types/types";
 import { FaJetFighterUp } from "react-icons/fa6";
 import { TbMilitaryAward } from "react-icons/tb";
 import { PiAirplaneTakeoffBold } from "react-icons/pi";
+import { APP_NAME } from "@/data/constants";
 
 export default function Home() {
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
@@ -268,11 +269,8 @@ export default function Home() {
                   </span>
                 </div>
                 <h1 className="text-3xl font-bold text-white font-display">
-                  PlaneBrain
+                  {APP_NAME}
                 </h1>
-                <span className="text-nasa-red font-bold text-sm">
-                  MISSION CONTROL
-                </span>
               </div>
               <div className="text-sm text-gray-400">Ready for Launch</div>
             </div>
@@ -284,7 +282,7 @@ export default function Home() {
           <div className="text-center">
             <div className="mb-8">
               <h2 className="text-5xl font-bold text-white mb-4 font-display inline-flex">
-                Welcome to PlaneBrain! &nbsp; &nbsp;
+                Welcome to {APP_NAME}! &nbsp; &nbsp;
                 {[
                   <FaJetFighterUp />,
                   <TbMilitaryAward />,
@@ -440,7 +438,7 @@ export default function Home() {
                 <span className="text-white text-2xl font-bold">P</span>
               </div>
               <h1 className="text-3xl font-bold text-white font-display">
-                PlaneBrain
+                {APP_NAME}
               </h1>
               <span className="text-nasa-red font-bold text-sm">
                 MISSION ACTIVE

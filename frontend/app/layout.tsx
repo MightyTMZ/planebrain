@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Fredoka } from "next/font/google";
+import { APP_NAME } from "@/data/constants"; 
 import "./globals.css";
 
 const inter = Inter({
@@ -13,7 +14,7 @@ const fredoka = Fredoka({
 });
 
 export const metadata: Metadata = {
-  title: "PlaneBrain - Fun Aviation for Kids!",
+  title: `${APP_NAME} - Fun Aviation for Kids!`,
   description: "Learn about planes, space, and aviation through fun interactive quizzes designed for kids aged 7-14!",
 };
 
